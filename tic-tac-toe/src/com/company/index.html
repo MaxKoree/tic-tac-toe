@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe!</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+</style>
+
+
+<body onload='document.getElementById("gameBoard").style.visibility = "hidden"'
+      onload='document.getElementById("p4").style.visibility = "hidden"'>
+<div id="headerDiv">
+
+    <p id="p2">X = Player one</p>
+    <p id="p3">O = Player two</p>
+</div>
+<div id="div1">
+    <form action="/action_page.php">
+        Player one: <input type="text" id="playerOne" onkeypress="return (event.charCode > 64 &&
+event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"><br><br>
+        <div id="playerTwoDiv"> Player two: <input type="text" id="playerTwo" onkeypress="return (event.charCode > 64 &&
+event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"><br></div>
+    </form>
+
+    <button id="button2" onclick='startGame()'>Play</button>
+    <button id="button3" onclick="resetName()">Reset names</button>
+</div>
+
+
+<div id="gameBoard" class="table">
+    <p id="p1">Player one</p>
+    <table style="height: 250px; width: 300px" ;>
+        <tr>
+            <th></th>
+            <th id="th1">1</th>
+            <th id="th2">2</th>
+            <th id="th3">3</th>
+        </tr>
+        <tr>
+            <td id="td1">1</td>
+            <td id="00" onclick="processField(0,0)">&nbsp;</td>
+            <td id="01" onclick="processField(0,1)">&nbsp;</td>
+            <td id="02" onclick="processField(0,2)">&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="td2">2</td>
+            <td id="10" onclick="processField(1,0)">&nbsp;</td>
+            <td id="11" onclick="processField(1,1)">&nbsp;</td>
+            <td id="12" onclick="processField(1,2)">&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="td3">3</td>
+            <td id="20" onclick="processField(2,0)">&nbsp;</td>
+            <td id="21" onclick="processField(2,1)">&nbsp;</td>
+            <td id="22" onclick="processField(2,2)">&nbsp;</td>
+        </tr>
+
+    </table>
+
+    <button id="button1" onclick="resetGame()">New game</button>
+
+</div>
+
+
+</body>
+</html>

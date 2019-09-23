@@ -1,0 +1,163 @@
+body {
+    font-family: 'Hind', sans-serif;
+    max-height: 1080px;
+}
+
+#gameBoard {
+    height: 465px;
+    background-color: #ecebec;
+    padding-bottom: 45px;
+}
+
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    border-color: #f5d010;
+    margin-top: 10px;
+    margin-left: 250px;
+    width: 30%;
+}
+
+#button2:disabled {
+    color: black;
+    background-color: #ebebe4;
+    border-color: #299c8b;
+}
+
+
+#p3 {
+    margin-left: 250px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#headerDiv {
+    background-color: #299c8b;
+    width: 1000px;
+}
+
+#p2 {
+    margin-left: 250px;
+    padding: 0px;
+    color: white;
+}
+
+
+#p1 {
+    margin-left: 250px;
+    margin-top: 25px;
+    color: #299c8b;
+    font-size: 40px;
+}
+
+#th1, #th2, #th3 {
+    border: 1px solid #299c8b;
+    width: 50px;
+}
+
+td {
+    border: 1px solid #299c8b;
+    width: 86px;
+    text-align: center;
+}
+
+#td1, #td2, #td3 {
+    border-top: 1px solid #299c8b;
+    border-borden: 1px solid #299c8b;
+}
+
+#button1 {
+    margin-left: 450px;
+    margin-top: 40px;
+    background-color: #008277;
+    color: white;
+    border: 2px solid white;
+    border-width: 2px;
+    padding: 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#button3 {
+    margin-top: 50px;
+    margin-left: 100px;
+    background-color: #008277;
+    color: white;
+    border: 2px solid white;
+    border-width: 2px;
+    padding: 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#button1:hover, #button3:hover {
+    background-color: white;
+    color: black;
+}
+
+form {
+    padding-left: 250px;
+    color: white;
+}
+
+#button2 {
+    margin-left: 350px;
+    background-color: #008277;
+    color: white;
+    border: 2px solid white;
+    border-width: 2px;
+    padding: 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin-top: 30px;
+}
+
+#button2:hover {
+    background-color: white;
+    color: black;
+}
+
+#button2:disabled:hover {
+    background-color: #ebebe4;
+    color: black;
+}
+
+input[type=text] {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #f5d010;
+
+}
+
+input {
+    color: white;
+}
+
+#playerOne {
+    color: black;
+}
+
+
+#playerTwo {
+    color: black;
+}
+
+#playerTwoDiv {
+    color: white;
+}
+
+#div1 {
+    background-color: #299c8b;
+    width: 1000px;
+    height: 220px;
+    padding-bottom: 60px;
+}
+
+
+
+td, th, tr {
+    width: 63px;
+}
